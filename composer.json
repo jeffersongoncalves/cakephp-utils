@@ -1,0 +1,31 @@
+{
+  "name": "jeffersonsimaogoncalves/cakephp-utils",
+  "description": "Plugin for CakePHP 3.x with useful components and behaviors",
+  "type": "cakephp-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bob Mulder",
+      "email": "bobmulder@outlook.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "cakephp/cakephp": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Utils\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Utils\\Test\\": "tests",
+      "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+      "App\\": "tests/App"
+    }
+  }
+}
