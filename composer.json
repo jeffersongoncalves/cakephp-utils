@@ -1,6 +1,6 @@
 {
   "name": "jeffersonsimaogoncalves/cakephp-utils",
-  "description": "CakePHP 3 plugin to provide basic support for building REST API services",
+  "description": "Standalone REST API / DataTables helper classes for CakePHP 3 (plugin-less sibling of cakephp-utility).",
   "keywords": [
     "cakephp",
     "utils"
