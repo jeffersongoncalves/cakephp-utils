@@ -22,6 +22,12 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    # CI runs PHP 7.4 + CakePHP 3; PHPUnit 9+ breaks the suite.
+    # Explicit `versions` range: without a composer.lock Dependabot skips update-types.
+    ignore:
+      - dependency-name: phpunit/phpunit
+        versions:
+          - '>=9.0'
     groups:
       composer-deps:
         patterns:
